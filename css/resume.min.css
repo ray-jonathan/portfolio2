@@ -99,6 +99,11 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
+  .flask-position{
+    margin-right: -20px !important;
+    /* margin-left: 10px !important; */
+    /* position: absolute !important; */
+  }
   #sideNav .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -137,6 +142,9 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+  .picture{
+    left: 0 !important;
+  }
 }
 section.resume-section {
   padding-top: 5rem !important;
@@ -152,6 +160,15 @@ section.resume-section .resume-item .resume-date {
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
+  }
+
+  .picture{
+    left: -10px !important;
+    transform: translateX(50%) !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
   }
 }
 @media (min-width: 992px) {
