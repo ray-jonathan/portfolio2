@@ -392,8 +392,43 @@
       <div class="w-100">
         <h2 class="mb-5">Projects</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
+        <style>
+          #sweater::before{
+            content: 'NEW';
+            font-weight: 900;
+            color: rgba(184, 11, 11, 0);
+            position: absolute;
+            top: -.8rem;
+            left: -1.2rem;
+            transform: rotate(-35deg);
+            animation: 2s pulse forwards infinite;
+            -webkit-animation: 2s pulse forwards infinite;
+          }
+          @keyframes pulse{
+            0%{
+              color:rgba(184, 11, 11, 0);
+            }
+            50%{
+              color:rgba(184, 11, 11, .6);
+            }
+            100%{
+              color:rgba(184, 11, 11, 0);
+            }
+          }
+          @-webkit-keyframes pulse{
+            0%{
+              color:rgba(184, 11, 11, 0);
+            }
+            50%{
+              color:rgba(184, 11, 11, .6);
+            }
+            100%{
+              color:rgba(184, 11, 11, 0);
+            }
+          }
+        </style>
+        <div style="position:relative;" class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div id="sweater" class="resume-content">
             <a href="https://strangersweater.com" target="_blank"><h3 class="mb-0">Stranger Sweater</h3></a>
             <div class="subheading mb-3">
                 <a class="project-icons"  href="https://strangersweater.com" target="_blank">
@@ -406,7 +441,8 @@
             <p>
                 <em>Description:</em> Built for fans of Stranger Things, Stranger Sweater is two projects in one. The Sweater is studded with lights that blink out your message. The controlling interface is a stylish web app where you can send/see spelled out messages anywhere in the world. Spooky! <br><br>
                 <em>Features:</em> 26 individually addressable LEDs. Internet connected wearable. Progressive Web App for ease of use. Web interface has its own light display that blinks along with what the Sweater is currently spelling out.<br><br>
-                <em>Built with:</em> Python, React, HTML, CSS, JavaScript, Node.js, Express, RaspberryPi
+                <em>Built with:</em> Python, React, HTML, CSS, JavaScript, Node.js, Express, RaspberryPi<br><br>
+                <em>Note:</em> This is an susbstantial evolution of a project I <a href="#petproject">created back in 2016.</a>
             </p>
           </div>
           <div class="resume-date text-md-right">
