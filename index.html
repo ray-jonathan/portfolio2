@@ -447,33 +447,17 @@
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">November 2019</span>
-            <style>
-              .picture{
-                /* display:flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin-left:7vw; */
-                position:relative;
-                left: 50%;
-                transform: translateX(-50%);
-                margin-top: 50px;
-                margin-bottom: 50px;
-                height: 200px;
-                width: 200px;
-              }
-              .picture img{
-                display:flex;
-                flex-direction: row;
-                align-content: center;
-                height:100%;
-                width:100%;
-                border: 10px solid #343a40;
-              }
-            </style>
             <div class="picture">
-            
-                <img class="rounded-circle"src="./sweaterdemo.gif" alt="" srcset="">
+              <img id="sweater-img" class="rounded-circle"src="./sweaterdemo.gif" alt="" srcset="">
+              <script>
+              document.addEventListener('DOMContentLoaded', ()=> {
+                document.getElementById('sweater-img').addEventListener('mouseenter',({target})=> {
+                  target.setAttribute('src', './strangedemo.gif')
+                })
+                document.getElementById('sweater-img').addEventListener('mouseleave',({target})=> {
+                  target.setAttribute('src', './sweaterdemo.gif')
+                })
+              }) </script>
             </div>
           </div>
         </div>
